@@ -257,5 +257,26 @@ chat='true'>
     <script src="js/parallax.min.js"></script>
     <script src="js/templatemo-script.js"></script>
     <script src='https://akart2601.myfreshworks.com/crm/sales/web_forms/c213cb3062c1dca7a787d5af84d5256b6eff621779739aa95c18fcd681926ac8/form.js' crossorigin='anonymous' id='fs_c213cb3062c1dca7a787d5af84d5256b6eff621779739aa95c18fcd681926ac8'><div class="https://akart2601.myfreshworks.com/crm/sales/web_forms/c213cb3062c1dca7a787d5af84d5256b6eff621779739aa95c18fcd681926ac8/form.js-group text-right"></script>
+<script src='//eu.fw-cdn.com/10104986/srctracking.js'></script>
+<script>
+var WebFormEvent = {
+beforeSubmit: function () {WebForm.$('<input>').attr({
+type: 'hidden',
+name: 'contact[custom_field][cf_utm_source]',
+value: window.localStorage.getItem("_fm_us") || ""
+}).appendTo('.fs-webform-container form');
+WebForm.$('<input>').attr({
+type: 'hidden',
+name: 'contact[custom_field][cf_utm_medium]',
+value: window.localStorage.getItem("_fm_um") || ""
+}).appendTo('.fs-webform-container form');
+WebForm.$('<input>').attr({
+type: 'hidden',
+name: 'contact[custom_field][cf_utm_campaign]',
+value: window.localStorage.getItem("_fm_uc") || ""
+}).appendTo('.fs-webform-container form');
+}
+}
+</script>
 </body>
 </html>
